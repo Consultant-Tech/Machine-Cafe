@@ -16,7 +16,7 @@ namespace Modeles.Modele
     public partial class MachineCafeEntities : DbContext
     {
         public MachineCafeEntities()
-            : base("name=MachineCafeEntities")
+            : base("name=MachineCafe")
         {
         }
     
