@@ -1,0 +1,70 @@
+﻿<Window x:Class="MachineCafes.MachineUserControl"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MachineCafes"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Background="RosyBrown">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="0">
+            <StackPanel Name="soort">
+                <TextBlock Name="ChoixCafe" Text="Préparez votre tasse de café:" FontSize="25" Margin="10"/>
+                <TextBlock Name="ChoixCafe2" Text="Choix:" FontSize="15" Margin="10"/>
+                <Button Background="FloralWhite" Name="the" Height="25" Margin="10" Content="Thé" Click="the_Click"/>
+                <Button Background="FloralWhite" Name="expresso" Height="25" Margin="10" Content="Expresso" Click="expresso_Click"/>
+                <Button Background="FloralWhite" Name="cappuccino" Height="25" Margin="10" Content="Cappuccino" Click="cappuccino_Click"/>
+                <Button Background="FloralWhite" Name="cafelait" Height="25" Margin="10" Content="Café au lait" Click="cafelait_Click"/>
+                <Button Background="FloralWhite" Name="CafeMacchiato" Height="25" Margin="10" Content="Café Macchiato" Click="CafeMacchiato_Click"/>
+                <Button Background="FloralWhite" Name="chocolatchaud" Height="25" Margin="10" Content="Chocolat Chaud" Click="chocolatchaud_Click"/>
+                <Button Background="FloralWhite" Name="cafemoka" Height="25" Margin="10" Content="Café Moka" Click="cafemoka_Click"/>
+            </StackPanel>
+        </Grid>
+        <Grid Grid.Column="1">
+            <TextBlock Name="intensite" Margin="20" Text="L'intensité du café" FontSize="20"/>
+            <StackPanel Margin="10,10,10,250" Orientation="Horizontal">
+                <Button Background="FloralWhite" Name="minusminus" Width="50" Height="50" Content="--" Margin="10" Click="minusminus_Click"/>
+                <Button Background="FloralWhite" Name="minus" Width="50" Height="50" Content="-" Margin="10" Click="minus_Click"/>
+                <Button Background="FloralWhite" Name="middle" Width="50" Height="50" Content="+/-" Margin="10" Click="middle_Click"/>
+                <Button Background="FloralWhite" Name="plus" Width="50" Height="50" Content="+" Margin="10" Click="plus_Click"/>
+                <Button Background="FloralWhite" Name="plusplus" Width="50" Height="50" Content="++" Margin="10" Click="plusplus_Click"/>
+            </StackPanel>
+            <TextBlock Name="lait" Margin="20,110" Text="Lait" FontSize="20"/>
+            <StackPanel Margin="10,10,10,50" Orientation="Horizontal">
+                <Button Background="FloralWhite" Name="min" Width="50" Height="50" Content="-" Margin="10,135,10,179" Click="min_Click" IsEnabled="False"/>
+                <Button Background="FloralWhite" Name="plus1" Width="50" Height="50" Content="+" Margin="10,135,10,179" Click="plus1_Click"/>
+                <TextBox Name="laitvalue" Width="50" Height="50" Text="0" FontSize="25" TextAlignment="Center" Margin="10,135,10,179"/>
+            </StackPanel>
+            <TextBlock Name="sucre" Margin="20,200,0,150" Text="Sucre" FontSize="20"/>
+            <StackPanel Margin="10,230,10,70" Orientation="Horizontal">
+                <Button Background="FloralWhite" Name="min1" Width="50" Height="50" Content="-" Margin="10,10,10,59" IsEnabled="False" Click="min1_Click"/>
+                <Button Background="FloralWhite" Name="plus2" Width="50" Height="50" Content="+" Margin="10,10,10,59" Click="plus2_Click"/>
+                <TextBox Name="sucrevalue" Width="50" Height="50" Text="0" FontSize="25" TextAlignment="Center" Margin="10,10,10,59"/>
+            </StackPanel>
+            <StackPanel Margin="250,230,10,120" Orientation="Horizontal">
+                <Button Background="FloralWhite"  Name="mug" Width="100" Height="50" Content="Avec Mug" Margin="10" Click="mug_Click"/>
+            </StackPanel>
+
+            <TextBlock Name="personnel" Margin="20,290,0,80" Text="Personnel" FontSize="20"/>
+            <StackPanel Margin="10,300,10,50" Orientation="Horizontal">
+                <TextBox Name="matricule" Width="80" Height="30" FontSize="20" TextAlignment="Center" Margin="10" TextChanged="matricule_Onchange"/>
+            </StackPanel>
+            <StackPanel Margin="120,300,10,50" Orientation="Horizontal">
+                <TextBox Name="nom" Width="110" Height="30" FontSize="20" TextAlignment="Center" Margin="10" />
+            </StackPanel>
+            <StackPanel Margin="240,300,10,50" Orientation="Horizontal">
+                <TextBox Name="prenom" Width="110" Height="30" FontSize="20" TextAlignment="Center" Margin="10" />
+            </StackPanel>
+            <StackPanel Margin="10,350,10,10" Orientation="Horizontal">
+                <Button Background="FloralWhite" Name="valider" Width="100" Height="30" Content="Récuperer" Margin="10" Click="valider_Click"/>
+            </StackPanel>
+            <StackPanel Margin="150,350,10,10" Orientation="Horizontal">
+                <Button Background="FloralWhite" Name="order" Width="200" Height="30" Content="Valider l'ordre" Margin="10" Click="order_Click"/>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Window>
