@@ -60,7 +60,7 @@
                 <TextBox Name="prenom" Width="110" Height="30" FontSize="20" TextAlignment="Center" Margin="10" />
             </StackPanel>
             <StackPanel Margin="10,350,10,10" Orientation="Horizontal">
-                <Button Background="FloralWhite" Name="valider" Width="100" Height="30" Content="Récuperer" Margin="10" Click="valider_Click"/>
+                <Button Background="FloralWhite" Name="valider" Width="100" Height="30" Content="Récupérer" Margin="10" Click="valider_Click"/>
             </StackPanel>
             <StackPanel Margin="150,350,10,10" Orientation="Horizontal">
                 <Button Background="FloralWhite" Name="order" Width="200" Height="30" Content="Valider l'ordre" Margin="10" Click="order_Click"/>
